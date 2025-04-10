@@ -7,9 +7,14 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: "Roboto";
+    transition:  background-color 0.5s ease;
+    padding-bottom: 15rem;
+    position: relative;
 }
 
+
 footer {
+    box-sizing: border-box;
     text-align: left;
     background-color: #14171A;
     padding: 1%;
@@ -17,6 +22,14 @@ footer {
     font-family: "Arvo", serif;
     font-size: 1.2rem;
     color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.alt-footer {
+    position: fixed;
+    bottom: 0px
 }
 
 .material-symbols-outlined {
@@ -28,7 +41,7 @@ footer {
 }
 
 /* Content styling */
-.side {
+.side, .about, .team, .sources {
     font-family: 'Roboto', sans-serif;
     padding: 20px;
 }
@@ -43,6 +56,14 @@ footer {
 .side {
     font-size: 1.5rem;
     text-align: center;
+}
+
+.about {
+    font-size: 1.5rem
+}
+
+.team {
+    font-size: 1.3rem;
 }
 
 /* Navbar styling */
@@ -174,7 +195,17 @@ footer {
 
 .timeline body {
     background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.timeline p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.timeline h1 {
+    font-family: "Jersey 25";
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -267,6 +298,7 @@ footer {
     background-color: white;
     position: relative;
     border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -300,4 +332,92 @@ footer {
     .right {
         left: 0%;
     }
+}
+
+/* Timeline Buttons */
+
+.read-more {
+    border-color:#1DA1F2;
+    background-color:#E1E8ED;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: "Arvo";
+    position: relative;
+    left: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color:#1DA1F2;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hidden text */
+
+.hidden-text {
+    display: none;
+    opacity: 0;
+    margin-top: 10px;
+    background-color:#AAB8C2;
+    padding: 10px;
+    border-color: #0c7abf;
+    border: solid;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 10;
+    top: 50%; left: 50%;
+    min-width: 400px;
+    max-width: fit-content;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden-text h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rm-content {
+    padding: 5px;
+    padding-top: 0;
+    margin-top: 0;
+    margin: 5px;
+    font-family: "Roboto";
+}
+
+.show-text {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition:  opacity 0.5s ease, transform 0.5s ease;
+    border-color: #0c7abf;
+}
+
+.show-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 5;
+    transition:  background-color 0.5s ease
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px; right: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 11;
+    line-height: 1;
+    padding: 0px;
+    margin: 0px;
+    transition: background-color 0.3s ease;
+    border-radius: 100%;
+}
+
+.close-btn:hover {
+    background-color: #474e5d;
+    transition: background-color 0.3s ease;
 }
