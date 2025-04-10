@@ -239,39 +239,77 @@
 
     <footer> placeholder </footer>
 
+    <div id="overlay"></div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const readMoreButtons = document.querySelectorAll('.read-more');
-            const body = document.querySelector('body');
-
+            const overlay = document.getElementById('overlay');
+            const body = document.body;
+    
             readMoreButtons.forEach(button => {
-                button.addEventListener('click', () => {
+                button.addEventListener('click', (event) => { // Added event parameter
+                    // Prevent click from propagating to potential parent listeners if needed
+                    event.stopPropagation();
+    
                     const hiddenText = button.nextElementSibling;
+    
+                    // Check if another modal is already open and close it first
+                    const currentlyShown = document.querySelector('.hidden-text.show-text');
+                    if (currentlyShown && currentlyShown !== hiddenText) {
+                        currentlyShown.classList.remove('show-text');
+                    } else if (currentlyShown === hiddenText) {
+                        return; // Current behavior: do nothing
+                    }
+    
+    
                     hiddenText.classList.add('show-text');
-                    body.classList.add('show-overlay');
+                    // Show the overlay element
+                    overlay.classList.add('active');
+                    // Prevent body scrolling while open
+                    body.style.overflow = 'hidden';
                 });
             });
-
-            body.addEventListener('click', (event) => {
-                let target = event.target;
-                if (!target.classList.contains('read-more') && !target.closest('.hidden-text')) {
-                    const shownTextBoxes = document.querySelectorAll('.show-text');
-                    shownTextBoxes.forEach(textBox => {
-                        textBox.classList.remove('show-text');
-                    });
-                    body.classList.remove('show-overlay');
+    
+            function closeModal() {
+                const shownTextBox = document.querySelector('.hidden-text.show-text');
+                if (shownTextBox) {
+                    shownTextBox.classList.remove('show-text');
                 }
+                overlay.classList.remove('active');
+                 // Restore body scrolling
+                body.style.overflow = '';
+            }
+    
+            // Listener for the overlay
+            overlay.addEventListener('click', () => {
+                closeModal();
             });
-
+    
             const closeButtons = document.querySelectorAll('.close-btn');
             closeButtons.forEach(closeButton => {
                 closeButton.addEventListener('click', (event) => {
-                    event.stopPropagation();
-                    const hiddenText = closeButton.parentElement;
-                    hiddenText.classList.remove('show-text');
-                    body.classList.remove('show-overlay');
+                    event.stopPropagation(); // Prevent click from bubbling to the modal/overlay
+                    closeModal();
                 });
             });
+    
+            //  Prevent clicks *inside* from closing the overlay
+                const hiddenTexts = document.querySelectorAll('.hidden-text');
+                hiddenTexts.forEach(modal => {
+                    modal.addEventListener('click', (event) => {
+                    // Stop the click from bubbling up to the overlay
+                    event.stopPropagation();
+                    });
+                });
+    
+            // Add keyboard accessibility (close with Escape key)
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+    
         });
     </script>
 
