@@ -3,57 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Twitter to X</title>
+    <title>About - From Twitter to X</title>
     <!-- style sheets -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- google fonts: roboto, roboto slab, arvo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- google font: workbench, jersey -->
+    <!-- google font: workbench, jersey 25 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Workbench&display=swap" rel="stylesheet">
+    <!-- font awesome icons (updated to newer version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- google icons: material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <!-- awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!-- update navbar to use the same one as the index.html -->
 <body>
-    <!-- navbar -->
+    <!-- navbar (updated with new design) -->
     <div class="navbar">
-        <h1 class="header"> From Twitter to X &nbsp; <p class="fa fa-twitter"></p> </h1>
-        <nav class="nav-collapse">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="sources.html">Sources</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <!-- About -->
-
-    <div class="about">
-        <p>
-            This project aims to provide a centralized, transparent record of how Elon Musk has transformed Twitter into the platform now known as X.
-            In addition, it provides context to help understand this transformation, the controversy surrounding it, and its real-life implications.
-        </p>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="twitter-logo"><i class="fab fa-twitter"></i></span>
+                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="x-logo">𝕏</span>
+                <h1 class="header">From Twitter to X</h1>
+            </div>
+            <nav class="nav-collapse">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
-    <!-- Team -->
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>About This Project</h1>
+            <p>Documenting the transformation of a platform that changed social media</p>
+        </div>
+    </header>
 
-    <div class="team">
-        <p>
-            This project was started by a group of Class 2025, UNC Chapel Hill School of Information and Library Science students.
-        </p>
-    </div>
+    <!-- About Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-card">
+                <h2>Our Mission</h2>
+                <p>
+                    This project aims to provide a centralized, transparent record of how Elon Musk has transformed 
+                    Twitter into the platform now known as X. In addition, it provides context to help understand 
+                    this transformation, the controversy surrounding it, and its real-life implications.
+                </p>
+                <p>
+                    As one of the most significant changes to a major social media platform in recent years, 
+                    the Twitter-to-X transformation deserves careful documentation and analysis that goes beyond 
+                    headlines and partisan takes.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <div>
-        <footer class="alt-footer">placeholder</footer>
-    </div>
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">The Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Project Origins</h3>
+                    <p>This project was started by a group of Class 2025 UNC Chapel Hill School of Information and Library Science students.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Our Approach</h3>
+                    <p>We've committed to factual accuracy, chronological clarity, and balanced presentation of this important digital transformation.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Ongoing Development</h3>
+                    <p>This timeline is regularly updated as new developments in the Twitter/X story unfold, ensuring a living document of this platform's evolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology">
+        <div class="container">
+            <h2 class="section-title">Our Methodology</h2>
+            <div class="methodology-content">
+                <div class="methodology-text">
+                    <p>
+                        We collect information from reputable news sources, official company statements, 
+                        and verified social media posts to ensure accuracy. All sources are documented 
+                        and available on our sources page.
+                    </p>
+                    <p>
+                        Events are presented chronologically with contextual information to help understand 
+                        their significance. We strive to provide a balanced view that acknowledges different 
+                        perspectives on controversial developments.
+                    </p>
+                    <a href="sources.html" class="cta-button">View Our Sources</a>
+                </div>
+                <div class="methodology-image">
+                    <div class="methodology-icon">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 From Twitter to X | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>

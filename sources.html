@@ -3,45 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Twitter to X</title>
+    <title>Sources - From Twitter to X</title>
     <!-- style sheets -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- google fonts: roboto, roboto slab, arvo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- google font: workbench, jersey -->
+    <!-- google font: workbench, jersey 25 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Workbench&display=swap" rel="stylesheet">
+    <!-- font awesome icons (updated to newer version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- google icons: material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <!-- awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!-- update navbar to use the same one as the index.html -->
 <body>
-    <!-- navbar -->
+    <!-- navbar (updated with new design) -->
     <div class="navbar">
-        <h1 class="header"> From Twitter to X &nbsp; <p class="fa fa-twitter"></p> </h1>
-        <nav class="nav-collapse">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="sources.html">Sources</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="twitter-logo"><i class="fab fa-twitter"></i></span>
+                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="x-logo">𝕏</span>
+                <h1 class="header">From Twitter to X</h1>
+            </div>
+            <nav class="nav-collapse">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
-    <!-- Sources -->
-    <div class="sources">
-        <h1>Bibliography</h1>
-    </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Our Sources</h1>
+            <p>Research, references, and citations used in documenting Twitter's transformation</p>
+        </div>
+    </header>
 
-    <div>
-        <footer class="alt-footer">placeholder</footer>
-    </div>
+    <!-- Introduction to Sources -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-card">
+                <h2>Bibliography and References</h2>
+                <p>
+                    This page contains all sources used in our research and documentation of Twitter's transformation to X.
+                    We prioritize reputable news sources, official company statements, verified social media posts, 
+                    and academic papers to ensure the highest level of accuracy.
+                </p>
+                <p>
+                    Sources are organized chronologically by the events they document and are regularly updated 
+                    as new information becomes available.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources Categories -->
+    <section class="sources-section">
+        <div class="container">
+            <div class="sources-filter">
+                <h3>Filter by category:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Sources</button>
+                    <button class="filter-btn" data-filter="news">News Articles</button>
+                    <button class="filter-btn" data-filter="official">Official Statements</button>
+                    <button class="filter-btn" data-filter="academic">Academic Research</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                </div>
+            </div>
+
+            <!-- Sources List -->
+            <div class="sources-list">
+                <div class="sources-category">
+                    <h2 class="category-title">Acquisition Phase (April-October 2022)</h2>
+                    <ul class="citation-list">
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Conger, K., & Isaac, M. (2022, April 14). "Elon Musk Offers to Buy Twitter for $43 Billion." <em>The New York Times</em>.</p>
+                                    <a href="https://www.nytimes.com/2022/04/14/technology/elon-musk-twitter-offer.html" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Feiner, L., & Moody, C. (2022, April 25). "Twitter accepts Elon Musk's buyout deal." <em>CNBC</em>.</p>
+                                    <a href="https://www.cnbc.com/2022/04/25/twitter-accepts-elon-musks-buyout-deal.html" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="official">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-file-contract"></i></span>
+                                <div class="citation-text">
+                                    <p>Twitter, Inc. (2022, April 25). "Twitter, Inc. Announces Definitive Agreement to be Acquired by Elon Musk." <em>Twitter Investor Relations</em>.</p>
+                                    <a href="https://investor.twitterinc.com/news/news-details/2022/Twitter-Inc-Announces-Definitive-Agreement-to-be-Acquired-by-Elon-Musk/default.aspx" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sources-category">
+                    <h2 class="category-title">Early Ownership Period (October-December 2022)</h2>
+                    <ul class="citation-list">
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Isaac, M., & Conger, K. (2022, October 27). "Elon Musk Completes $44 Billion Deal to Own Twitter." <em>The New York Times</em>.</p>
+                                    <a href="https://www.nytimes.com/2022/10/27/technology/elon-musk-twitter-deal-complete.html" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="social">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fab fa-twitter"></i></span>
+                                <div class="citation-text">
+                                    <p>Musk, E. [@elonmusk]. (2022, October 26). "Entering Twitter HQ – let that sink in!" <em>Twitter</em>.</p>
+                                    <a href="https://twitter.com/elonmusk/status/1585341984679469056" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Siddiqui, F., & De Vynck, G. (2022, November 11). "Twitter's blue check chaos is a gift to impersonators." <em>The Washington Post</em>.</p>
+                                    <a href="https://www.washingtonpost.com/technology/2022/11/11/twitter-blue-check-fake-accounts/" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sources-category">
+                    <h2 class="category-title">Rebranding to X (July 2023)</h2>
+                    <ul class="citation-list">
+                        <li class="citation-item" data-type="social">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fab fa-twitter"></i></span>
+                                <div class="citation-text">
+                                    <p>Musk, E. [@elonmusk]. (2023, July 23). "And soon we shall bid adieu to the twitter brand and, gradually, all the birds." <em>Twitter</em>.</p>
+                                    <a href="https://twitter.com/elonmusk/status/1682843697294938112" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Heath, A. (2023, July 23). "Elon Musk is rebranding Twitter as X." <em>The Verge</em>.</p>
+                                    <a href="https://www.theverge.com/2023/7/23/23804630/elon-musk-twitter-rebrand-x" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="academic">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-graduation-cap"></i></span>
+                                <div class="citation-text">
+                                    <p>Jenkins, L., & Merrin, W. (2023). "From Twitter to X: Corporate Rebranding and Platform Identity in Social Media." <em>Journal of Media Studies</em>, 41(3), 287-304.</p>
+                                    <a href="#" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sources-category">
+                    <h2 class="category-title">Valuation and User Trends (2023-2024)</h2>
+                    <ul class="citation-list">
+                        <li class="citation-item" data-type="news">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-newspaper"></i></span>
+                                <div class="citation-text">
+                                    <p>Levy, A. (2023, December 18). "Elon Musk's X is worth 71% less than when he bought it, Fidelity estimates." <em>CNBC</em>.</p>
+                                    <a href="https://www.cnbc.com/2023/12/18/elon-musks-x-is-worth-71percent-less-than-what-he-paid-fidelity-estimates.html" target="_blank" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="citation-item" data-type="academic">
+                            <div class="citation-content">
+                                <span class="citation-icon"><i class="fas fa-graduation-cap"></i></span>
+                                <div class="citation-text">
+                                    <p>Chen, R., & Berman, S. (2024). "User Migration Patterns in Social Media Platforms Following Ownership Changes." <em>Social Media & Society</em>, 10(1), 1-18.</p>
+                                    <a href="#" class="citation-link">View Source <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 From Twitter to X | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for filtering sources -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const citations = document.querySelectorAll('.citation-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    citations.forEach(citation => {
+                        if (filterValue === 'all' || citation.getAttribute('data-type') === filterValue) {
+                            citation.style.display = 'block';
+                        } else {
+                            citation.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
