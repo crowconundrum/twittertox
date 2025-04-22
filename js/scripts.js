@@ -84,8 +84,24 @@ const modalData = {
         `
     },
     2: {
-        title: "Deal Completion Details",
+        title: "Deal Completion - October 2022",
         content: `
+            <div class="main-content">
+                <h3>Deal Completion</h3>
+                <p class="lead">
+                    After his offer, Twitter’s board initially resisted Elon Musk’s acquisition attempt by enacting a “poison pill” — a strategy where shareholders are offered discounted stock to dilute a dominant investor’s stake. This move made it harder for Musk to take control without negotiation. After further discussions, the board accepted his $44 billion offer on April 25th.
+                </p>
+                <p>
+                    This move marked a pivotal shift in the company’s ownership structure, setting the stage for rapid executive turnover, platform rebranding, and major shifts in policy. Though controversial, the acceptance of Musk’s offer reshaped the public and financial trajectory of the platform.
+                </p>
+                <p>
+                    For more context on the board's response, read the full article from 
+                    <a href="https://www.npr.org/2022/04/15/1093077611/twitter-board-poison-pill-elon-musk" target="_blank" rel="noopener noreferrer">
+                        NPR: Twitter adopts 'poison pill' defense to block Elon Musk's buyout attempt
+                    </a>.
+                </p>
+            </div>
+
             <div class="modal-grid">
                 <div class="modal-card large">
                     <h3>Transaction Overview</h3>
@@ -123,36 +139,427 @@ const modalData = {
                         <li>Verification system revamp planned</li>
                     </ul>
                 </div>
-
-                <div class="modal-card medium">
-                    <h3>Stock Performance</h3>
-                    <div class="chart-container">
-                        <canvas id="stockChart2"></canvas>
-                    </div>
-                </div>
             </div>
         `
     },
     3: {
-        title: "Verification System Chaos",
+        title: "Mass Layoffs & Verification System Changes - November 2022",
         content: `
-            <p>Musk launched a revised Twitter Blue subscription service for $8 per month that included access to the blue verification checkmark - previously only given to verified celebrities, politicians, journalists, and public figures.</p>
-            <p>This change led to a surge of impersonation accounts on the platform, with some fake accounts impersonating companies causing billions in market value losses for real companies. For example, a fake Eli Lilly account tweeted "insulin is now free," causing the company's stock to plummet.</p>
-            <p>Twitter had to pause the service and relaunch it later with additional verification steps.</p>
+            <article class="news-article">
+                <!-- First Row -->
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>November 2022 – Mass layoffs and the introduction of Twitter Blue</h3>
+                        <p class="lead">
+                            Within just days of Elon Musk’s ownership, 50% of Twitter staff had been laid off. He then unbanned Donald Trump’s Twitter account and introduced Twitter Blue, a new subscription-based verification system.
+                        </p>
+                        <p>
+                            This would replace Twitter’s prior verification system, where verifications were given to popular figures such as celebrities, organizations, and journalists. With Twitter Blue, anyone can pay $8 to receive a verification badge and prioritization in the algorithm.
+                        </p>
+                        <p>
+                            Although Elon Musk believed this would lessen spam, this quickly led to large amounts of spam bot accounts purchasing Twitter Blue. With a verification checkmark, these bots could flood comment sections, impersonate people, and scam others at much higher rates than before.
+                        </p>
+                        <p>
+                            During this time, Tesla's stock value began to drop to its lowest since the pandemic.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                <div class="main-content">
+                    <h3>Verification System: Before vs. After</h3>
+                    <div class="comparison-lists">
+                        <div class="comparison-box">
+                            <h4>Before (Legacy Verification)</h4>
+                            <ul>
+                                <li>Blue checkmark earned, not bought</li>
+                                <li>Verified identity required</li>
+                                <li>Given to celebrities, journalists, and organizations</li>
+                                <li>Manual review by Twitter staff</li>
+                                <li>Rare to achieve</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-box">
+                            <h4>After (Twitter Blue)</h4>
+                            <ul>
+                                <li>Blue checkmark available for $8/month</li>
+                                <li>No identity verification required</li>
+                                <li>Open to all users</li>
+                                <li>Automated subscription-based system</li>
+                                <li>Easy to achieve</li>
+                                <li>Prioritized in algorithm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Second Row: Quoted Tweets -->
+                <div class="content-row">
+                    <div class="main-content">
+                        <div class="quote-tweet">
+                            "You keep your #bluecheckmark, @Twitter, we'll keep our Fresh-Baked Bread 😉"<br>
+                            <span style="color: #1da1f2">@texasroadhouse</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
         `
     },
     4: {
-        title: "Transformation from Twitter to X",
+        title: "Transformation from Twitter to X - July 2023",
         content: `
-            <!-- Add your content for transformation here -->
+            <article class="news-article">
+                <!-- First Row -->
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>July 2023 – Twitter Rebrands to X</h3>
+                        <p class="lead">
+                            On July 23, 2023, Musk abruptly announced Twitter would be renamed "X" and began replacing the iconic blue bird logo. The next day, the Twitter sign at headquarters was replaced with a flashing "X". This was due to his desire to rebrand Twitter entirely into an "everything app", similar to China's WeChat, integrating social media, payments, shopping, and other services. However, many users and experts were skeptical about the rebrand, viewing it as abandoning twenty years of Twitter's brand equity.
+                        </p>
+                        <p>
+                            This change reflected Musk's long-standing "X" fixation—he previously founded X.com (which later became part of PayPal), SpaceX, and even included X in his son's name.
+                        </p>
+                        <p>
+                            This change was controversial, with some people excited for change and others frustrated at the abandonment of the platform they loved. Many believe this rebrand was a large failure, with the company losing 70% of its market value since Musk’s ownership (as of September 2024).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>Brand Health After the Rebrand</h3>
+                        <p>
+                            According to YouGov data, the rebranding of Twitter to X has seen mixed results. The platform’s brand perception initially plummeted after Musk’s acquisition but showed signs of slow recovery by mid-2024. However, half of Americans still refer to the platform as “Twitter,” and the rebrand has not restored user trust to pre-Musk levels.
+                        </p>
+                        <p>
+                            Read the full analysis:
+                            <a href="https://business.yougov.com/content/49976-a-year-after-twitter-was-rebranded-to-x-how-has-the-brand-progressed-in-the-us" target="_blank" rel="noopener noreferrer">
+                                YouGov: A Year After Twitter Was Rebranded to X
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Row: Tweet Embed -->
+                <div class="content-row">
+                    <div class="tweets-container">
+                        <div class="tweet-embed" data-tweet-id="1683563550462050310"></div>
+                    </div>
+                </div>
+            </article>
         `
     },
     5: {
-        title: "Valuation and User Changes",
+        title: "Lawsuit & Block Feature Controversy – August 2023",
         content: `
-            <!-- Add your content for valuation here -->
+            <article class="news-article">
+                <!-- First Row -->
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>August 2023 – Lawsuit Against CCDH & Block Feature Changed</h3>
+                        <p class="lead">
+                            The Center for Countering Digital Hate (CCDH) published research showing that X (formerly Twitter) failed to remove hate speech and harmful content, even after it was reported. They claimed the platform was no longer enforcing its content moderation policies.
+                        </p>
+                        <p>
+                            In response, X filed a lawsuit accusing CCDH of harming its reputation and contributing to a drop in ad revenue. X also alleged the nonprofit gained unauthorized access to internal data.
+                        </p>
+                        <p>
+                            Around this time, Elon Musk announced controversial changes to the block feature. Previously, blocking someone prevented both parties from seeing or interacting with each other’s content. Under the new rules, blocked users can still view posts from accounts that blocked them, but cannot reply or engage. 
+                        </p>
+                        <p>
+                            This change was widely criticized, especially by users who rely on the block feature to avoid harassment and stalking. Musk had hoped to remove the feature entirely, but doing so risked X being banned from the Apple and Google Play stores.
+                        </p>
+                    </div>
+                </div>
+            </article>
         `
-    }
+    },
+    6: {
+        title: "Valuation Plunge and User Changes - Early 2024",
+        content: `
+            <h3>Valuation and User-Base Issues</h3>
+                <p>By early 2024, multiple reports indicated X's valuation had fallen to about $15 billion, just a third of what Musk paid. Internal documents showed declining daily and monthly active users.</p>
+                <p>Multiple studies suggested users were migrating to rival platforms like Threads, Bluesky, and Mastodon in large numbers, particularly in news and media sectors in the US and Europe.</p>
+                <p>Advertising revenue also declined steeply, with many major advertisers pausing spending on X due to relaxed content moderation and increased hate speech on the platform. Musk himself admitted the company's ad revenue had fallen by approximately 50%.</p>
+
+            <!-- Quote and Article Reference -->
+                <blockquote class="key-quote">
+                <p>“The terrible toxicity seems integral to the site’s addictiveness, each swipe of the app like inhaling a strong cigarette, or gulping a shot of absinthe; dedicated users can’t seem to stop logging in.”</p>
+                <cite>– <a href="https://www.forbes.com/sites/danidiplacido/2024/11/19/the-x-twitter-exodus-to-bluesky-explained/" target="_blank" rel="noopener noreferrer">The X (Twitter) Exodus To Bluesky, Explained – Forbes</a></cite>
+                </blockquote>
+                
+            <!-- Second Row: Tweet Embed -->
+            <div class="content-row">
+                <div class="tweets-container">
+                    <h3>User Tweets</h3>
+                    <div class="tweet-embed" data-tweet-id="1856913224593281028"></div>
+                </div>
+            </div>
+        `
+    },
+    7: {
+        title: "X Loses Lawsuit Against CCDH - March 2024",
+        content: `
+            <article class="news-article">
+                <!-- First Row -->
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>X Loses Lawsuit Against the Center for Countering Digital Hate</h3>
+                        <p class="lead">
+                            In March 2024, X lost its lawsuit against the Center for Countering Digital Hate (CCDH). The case centered around the nonprofit’s use of automated data collection to expose X’s failures in moderating hate speech and harmful content.
+                        </p>
+                        <p>
+                            A California District Court ruled that the CCDH’s data scraping activities were protected, as they served the public interest by holding platforms accountable. The court found X’s motivations for the lawsuit to be retaliatory—an attempt to silence criticism that harmed the platform’s advertising revenue, rather than a legitimate concern about data access.
+                        </p>
+                        <p>
+                            This loss was a major blow to Elon Musk’s ongoing efforts to frame critics of the platform as malicious actors, and it underscored growing concerns over transparency and free speech on X.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        `
+    },
+    8: {
+        title: "Brazil Blocks X - Aug–Sept 2024",
+        content: `
+            <article class="news-article">
+                <div class="content-row">
+                    <div class="main-content">
+                        <h3>August – September 2024: Brazil Blocks X</h3>
+                        <p class="lead">
+                            In response to Elon Musk’s refusal to appoint a legal representative in Brazil, the country’s Supreme Court unanimously ruled to block access to X (formerly Twitter).
+                        </p>
+                        <p>
+                            This action removed access for approximately 20 million Brazilian users. The ruling was part of an ongoing investigation into the platform’s role in unbanning far-right accounts that had been previously suspended.
+                        </p>
+                        <p>
+                            In addition to the ban on X, Brazil’s authorities also froze Starlink operations in the region, intensifying tensions between Musk and the Brazilian government.
+                        </p>
+                        <blockquote class="key-quote">
+                            <p>
+                                “Elon Musk showed his total disrespect for Brazilian sovereignty and, in particular, for the judiciary, setting himself up as a true supranational entity and immune to the laws of each country.”
+                            </p>
+                            <cite>- Justice Alexandre de Moraes</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Second Row: Tweets + Stat Box -->
+                <div class="content-row">
+                    <div class="tweets-container">
+                        <h3>Public Reaction</h3>
+                        <div class="tweet-embed" data-tweet-id="1829616246557638848"></div>
+                        <div class="tweet-embed" data-tweet-id="1829624912568287420"></div>
+                    </div>
+                    <div class="transaction-overview">
+                        <h3>User Loss from Brazil Ban</h3>
+                        <div class="stats-container">
+                            <div class="stat-box">
+                                <div class="stat-value">20M</div>
+                                <div class="stat-label">Users Lost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        `
+    },
+    9: {
+        title: "The Presidential Election and Elon's Political Influence - November 2024",
+        content: `
+            <article class="news-article">
+                <!-- First Row -->
+                <div class="content-row">
+                    <div class="video-container">
+                        <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/hRBCc0k-AhM" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="main-content">
+                        <h3>Presidential Election</h3>
+                        <p class="lead">
+                            During the 2024 Presidential Election between candidates Kamala Harris and Donald Trump, Elon Musk showed continual support for Trump. 
+                            He heavily utilized Twitter to campaign for his presidency through countless Tweets, livestreams, and fundraisers.
+                        </p>
+                        <p>
+                            On top of using Twitter to support Trump, Musk formed a super PAC and donated more than $200 million to it. 
+                            Many people became frustrated at the large amounts of pro-Trump content overrunning Twitter during this time.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        `
+    },
+    10: {
+        title: "Elon Musk's Involvement in Trump’s Presidency - January 2025",
+        content: `
+            <article class="news-article">
+            <!-- First Row: Description -->
+            <div class="content-row">
+                <div class="main-content">
+                <h3>Trump’s Inauguration</h3>
+                <p class="lead">
+                    Multiple tech billionaires, including Elon Musk, stood behind Trump during his inauguration. At a post-inauguration rally, Musk gave a celebratory speech, emphasizing his excitement for the future of the United States. During this speech, Musk twice gestured a salute that many compared to the Nazi salute. This action drew extremely heavy controversy, with angry reactions from all over the globe. Some European political parties demanded that he be banned from entering their countries. On the other hand, some white supremacist groups celebrated this salute. Musk denied that this was a Nazi salute, but many people firmly believe it was.
+                </p>
+                <blockquote class="key-quote">
+                    <p>“The Musk/Trump dynamic has added to the agita of Tesla investors and it’s not helping the demand issues in the US... Musk becoming more political is not bullish for the Tesla brand.”</p>
+                    <cite>– Dan Ives, managing director at Wedbush Securities</cite>
+                </blockquote>
+                <blockquote class="key-quote">
+                    <p>“I don’t care if this was a mistake. I’m going to enjoy the tears over it.”</p>
+                    <cite>– Christopher Pohlhaus, Blood Tribe neo-Nazi leader (via Telegram)</cite>
+                </blockquote>
+                </div>
+            </div>
+
+            <!-- Second Row: Public Reactions -->
+            <div class="content-row">
+                <div class="tweets-container">
+                <h3>Public Reactions</h3>
+                <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                    <!-- Video -->
+                    <div style="flex: 1; min-width: 300px;">
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/hRBCc0k-AhM"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+
+                    <!-- Tweet -->
+                    <div style="flex: 1; min-width: 300px;">
+                    <div class="tweet-embed" data-tweet-id="1881445983768498427"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Third Row: DOGE Announcement -->
+            <div class="content-row">
+                <div class="main-content">
+                <h3>Launch of DOGE – Department of Government Efficiency</h3>
+                <p>
+                    On January 20th, Donald Trump created the Department of Government Efficiency (DOGE). This new department was established to cut wasteful federal spending, with efforts led by Elon Musk.
+                </p>
+                <p>
+                    Immediately, a DOGE Twitter page was created with a verification badge designating it as a government organization. The account began sharing updates and accepting user tips via direct message on how to reduce wasteful spending.
+                </p>
+                <p>
+                    The official government website (<a href="https://doge.gov" target="_blank" rel="noopener noreferrer">doge.gov</a>) consists entirely of embedded tweets from the DOGE Twitter account. This caused many to perceive DOGE and Twitter/X as closely intertwined. Congress has yet to officially authorize the department.
+                </p>
+                </div>
+            </div>
+
+            <!-- DOGE Tweets Row -->
+            <div class="content-row">
+            <div class="tweets-container">
+                <h3>Public Input Request</h3>
+                <div class="tweet-embed" data-tweet-id="1891288881674240070"></div>
+            </div>
+            <div class="reactions-container">
+                <h3>Policy Enforcement Update</h3>
+                <div class="tweet-embed" data-tweet-id="1913403692906324405"></div>
+            </div>
+            </div>
+            </article>
+            `
+        },
+        11: {
+            title: "Cybertruck Vandalism & Grok Censorship - February 2025",
+            content: `
+                <article class="news-article">
+                <!-- First Row: Description -->
+                <div class="content-row">
+                    <div class="main-content">
+                    <h3>February 2025 – Cybertruck Vandalism, Grok Censoring</h3>
+                    <p class="lead">
+                        As negative public perception towards Elon Musk grew, his companies began facing further backlash. Vandalism of Tesla Cybertrucks increased rapidly, with many videos and images shared on Twitter. Some incidents showed egged vehicles, while others displayed spray-painted swastikas and anti-Elon messages.
+                    </p>
+                    <p>
+                        At the same time, users noticed that Grok, X's AI assistant, had stopped giving honest or critical answers about Elon Musk. After a wave of screenshots showing Grok calling Musk a "disinformation spreader" and saying he wasn't a good person, it suddenly began avoiding criticism. Users began questioning Grok until it admitted its code had been altered, sparking accusations of censorship on a so-called “free-speech platform.”
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Second Row: Cybertruck Vandalism -->
+                <div class="content-row">
+                    <div class="tweets-container">
+                    <h3>Cybertruck Vandalism</h3>
+                    <div class="tweet-embed" data-tweet-id="1892221014739734642"></div>
+                    <div class="tweet-embed" data-tweet-id="1893363837962748218"></div>
+                    <div class="tweet-embed" data-tweet-id="1893448856718741546"></div>
+                    </div>
+                </div>
+
+                <!-- Third Row: Grok Censorship -->
+                <div class="content-row">
+                    <div class="tweets-container">
+                    <h3>Grok AI Censorship</h3>
+                    <div class="tweet-embed" data-tweet-id="1893681902957076687"></div>
+                    <div class="tweet-embed" data-tweet-id="1893707696307605786"></div>
+                    </div>
+                </div>
+                </article>
+            `
+            },
+            12: {
+                title: "X Sold to xAI, Social Blade Removes X - March 2025",
+                content: `
+                    <article class="news-article">
+                        <!-- First Row: Description -->
+                        <div class="content-row">
+                            <div class="main-content">
+                            <h3>March 2025: Elon Sells Twitter, Social Blade Removes X</h3>
+                            <p>
+                                In a $33 billion stock-deal, Elon Musk sold X to xAI, his own artificial intelligence company. These companies were already intertwined, as X uses xAI’s chatbot, Grok, and they share software engineers. Musk stated that this would unlock new potential by combining the companies’ capabilities, with xAI having advanced AI and X having massive reach.
+                            </p>
+                            <p>
+                                During this time, Twitter was removed from the popular website 
+                                <a href="https://www.socialblade.com" target="_blank" rel="noopener noreferrer">Social Blade</a>, which tracks analytics for various social platforms. In a tweet posted on March 14th, Social Blade explained they had to remove Twitter statistics due to X’s rising API pricing—starting at $42,000/month under Enterprise rates. They deemed this financially unsustainable.
+                            </p>
+                            <p>
+                                Overall, Twitter has lost about <strong>32 million users</strong> since Elon Musk’s takeover.
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Stats Row -->
+                            <div class="content-row">
+                                <div class="transaction-overview">
+                                    <h3>Stats Summary</h3>
+                                    <div class="stats-container">
+                                        <div class="stat-box">
+                                            <div class="stat-value">32M</div>
+                                            <div class="stat-label">Users Lost since Acquisition</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-value">$11B</div>
+                                            <div class="stat-label">Valuation Drop since Acquisition </div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-value">$134B</div>
+                                            <div class="stat-label">Musk's Net Worth Loss since January 1st</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Social Blade Tweet Row -->
+                            <div class="content-row">
+                                <div class="tweets-container" style="width: 100%;">
+                                    <h3>Social Blade Announcement</h3>
+                                    <div class="tweet-embed" data-tweet-id="1900589770671071518"></div>
+                                </div>
+                            </div>
+                    </article>
+            `
+        }       
 };
 
 // Timeline animation
