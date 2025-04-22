@@ -20,6 +20,7 @@
     <!-- google icons: material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=cancel" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -69,23 +70,23 @@
         </div>
     </section>
 
-    <!-- Timeline (updated with new design) -->
+    <!-- Timeline section -->
     <section id="timeline" class="timeline-section">
         <div class="container">
             <h2 class="section-title">Timeline of Events</h2>
-            
             <div class="timeline">
-                <!-- Your existing timeline content, but with updated structure -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">
                         <h3>April 2022</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3>Acquisition Offer</h3>
-                        <p>Elon Musk offers to buy Twitter for $44 billion, at $54.20 per share.</p>
-                        <span class="timeline-icon"><i class="fas fa-handshake"></i></span>
-                        <button class="read-more" data-id="1">Read more</button>
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Twitter Acquisition Announcement</h3>
+                        <p>Elon Musk's $44 billion offer to buy Twitter marks one of the largest tech acquisitions in history.</p>
+                        <button class="read-more" data-id="1">Read More</button>
                     </div>
                 </div>
 
@@ -95,10 +96,12 @@
                         <h3>October 2022</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3>Deal Completed</h3>
-                        <p>After months of legal battles, Musk completes the Twitter acquisition and immediately fires CEO Parag Agrawal.</p>
-                        <span class="timeline-icon"><i class="fas fa-check-circle"></i></span>
-                        <button class="read-more" data-id="2">Read more</button>
+                        <div class="timeline-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Deal Completion</h3>
+                        <p>After months of legal battles, the acquisition was finally completed on October 27, 2022.</p>
+                        <button class="read-more" data-id="2">Read More</button>
                     </div>
                 </div>
 
@@ -108,10 +111,12 @@
                         <h3>November 2022</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3>Twitter Blue & Verification Crisis</h3>
-                        <p>Twitter launches revised Blue subscription, allowing anyone to purchase verification badges.</p>
-                        <span class="timeline-icon"><i class="fas fa-certificate"></i></span>
-                        <button class="read-more" data-id="3">Read more</button>
+                        <div class="timeline-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Verification System Changes</h3>
+                        <p>Twitter Blue's $8 verification system launch leads to widespread impersonation issues and temporary suspension.</p>
+                        <button class="read-more" data-id="3">Read More</button>
                     </div>
                 </div>
 
@@ -121,27 +126,29 @@
                         <h3>July 2023</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3>Rebranded as "X"</h3>
-                        <p>Twitter officially rebrands as "X", marking the beginning of Musk's "everything app" vision.</p>
-                        <span class="timeline-icon"><i class="fas fa-x"></i></span>
-                        <button class="read-more" data-id="4">Read more</button>
+                        <div class="timeline-icon">
+                            <i class="fas fa-x"></i>
+                        </div>
+                        <h3>Rebranding to X</h3>
+                        <p>Twitter is rebranded as "X", marking the end of the iconic blue bird logo and 17-year-old brand name.</p>
+                        <button class="read-more" data-id="4">Read More</button>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">
-                        <h3>January 2024</h3>
+                        <h3>Early 2024</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3>Valuation Drop & User Decline</h3>
-                        <p>Reports show X's valuation has fallen to about a third of what Musk paid, around $15 billion.</p>
-                        <span class="timeline-icon"><i class="fas fa-chart-line fa-flip-vertical"></i></span>
-                        <button class="read-more" data-id="5">Read more</button>
+                        <div class="timeline-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Valuation and User Changes</h3>
+                        <p>X's valuation drops to $15 billion, showing significant decline in users and ad revenue.</p>
+                        <button class="read-more" data-id="5">Read More</button>
                     </div>
                 </div>
-                
-                <!-- You can continue adding the rest of your timeline entries following this pattern -->
             </div>
         </div>
     </section>
@@ -175,7 +182,7 @@
         </div>
     </section>
 
-    <!-- Modal Overlay (improved version) -->
+    <!-- Modal Overlay -->
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal">
             <div class="modal-header">
@@ -183,10 +190,15 @@
                 <button class="close-modal"><i class="fas fa-times"></i></button>
             </div>
             <div class="modal-content" id="modalContent">
-                <!-- Dynamic content will be inserted by JavaScript -->
+                <!-- Dynamic content will be inserted here -->
             </div>
         </div>
     </div>
+
+    <!-- 确保加载所需的脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/scripts.js"></script>
 
     <!-- Footer (updated) -->
     <footer class="footer">
@@ -220,19 +232,136 @@
             // Modal functionality
             const modalData = {
                 1: {
-                    title: "Acquisition Offer Background",
+                    title: "Twitter Acquisition Bid - April 14, 2022",
                     content: `
-                        <p>Prior to announcing his acquisition offer, Musk had quietly bought 9.2% of Twitter's shares, becoming the company's largest shareholder. On April 14, he offered to buy Twitter outright for $54.20 per share, valuing the company at about $44 billion.</p>
-                        <p>Musk stated in his proposal: "Twitter has tremendous potential. I will unlock it." He emphasized Twitter needed to be transformed as a private company to serve its role as a platform for free speech.</p>
-                        <p>The offer represented a premium of about 38% over Twitter's market price at that time and drew significant attention. Twitter's board initially adopted a "poison pill" strategy to resist the acquisition.</p>
+                        <article class="news-article">
+                            <!-- First Row -->
+                            <div class="content-row">
+                                <div class="video-container">
+                                    <iframe width="100%" height="315" 
+                                        src="https://www.youtube.com/embed/cdZZpaB2kDM" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="main-content">
+                                    <h3>Musk's Twitter Acquisition Bid</h3>
+                                    <p class="lead">Elon Musk began buying Twitter shares and became the largest shareholder by April. On April 14th, he bid to purchase Twitter, hoping to make it a free-speech platform. He stated that he would reconsider his shares if his offer is declined.</p>
+                                    <p>The deal, announced on April 14, 2022, represents a significant premium over Twitter's trading price and comes after Musk became the company's largest shareholder.</p>
+                                    <blockquote class="key-quote">
+                                        <p>"I think it's very important for there to be an inclusive arena for free speech."</p>
+                                        <cite>- @elonmusk</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Second Row -->
+                            <div class="content-row">
+                                <div class="tweets-container">
+                                    <h3>Musk's Announcements</h3>
+                                    <div class="tweet-embed" data-tweet-id="1514698036760530945"></div>
+                                    <div class="tweet-embed" data-tweet-id="1514564966564651008"></div>
+                                </div>
+                                <div class="reactions-container">
+                                    <h3>Public Reactions</h3>
+                                    <div class="tweet-embed" data-tweet-id="1514736109825433606"></div>
+                                    <div class="tweet-embed" data-tweet-id="1514714373260029961"></div>
+                                </div>
+                            </div>
+
+                            <!-- Third Row -->
+                            <div class="content-row">
+                                <div class="chart-container">
+                                    <h3>Public Opinion on Acquisition</h3>
+                                    <canvas id="supportChart"></canvas>
+                                </div>
+                                <div class="changes-list">
+                                    <h3>Initial Changes</h3>
+                                    <ul>
+                                        <li>Board members removed</li>
+                                        <li>New leadership team appointed</li>
+                                        <li>Content moderation policies revised</li>
+                                        <li>Platform verification system changes proposed</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Fourth Row -->
+                            <div class="content-row">
+                                <div class="transaction-overview">
+                                    <h3>Transaction Overview</h3>
+                                    <div class="stats-container">
+                                        <div class="stat-box">
+                                            <div class="stat-value">$44B</div>
+                                            <div class="stat-label">Total Value</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-value">$54.20</div>
+                                            <div class="stat-label">Per Share</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-value">38%</div>
+                                            <div class="stat-label">Premium</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stock-chart">
+                                    <h3>Stock Performance</h3>
+                                    <canvas id="stockChart"></canvas>
+                                </div>
+                            </div>
+                        </article>
                     `
                 },
                 2: {
-                    title: "Deal Completion and Immediate Changes",
+                    title: "Deal Completion Details",
                     content: `
-                        <p>On October 27, 2022, after complex negotiations, deal suspensions, and legal challenges, Musk finally completed the Twitter acquisition at the originally proposed price. His first action was to fire CEO Parag Agrawal, CFO Ned Segal, and head of legal policy Vijaya Gadde.</p>
-                        <p>The iconic image of Musk carrying a sink into Twitter HQ, with his tweet "let that sink in," marked this moment.</p>
-                        <p>Within days of the acquisition, he announced plans to cut about 50% of staff and began reassessing the platform's content moderation policies.</p>
+                        <div class="modal-grid">
+                            <div class="modal-card large">
+                                <h3>Transaction Overview</h3>
+                                <div class="stats-container">
+                                    <div class="stat-box">
+                                        <div class="stat-value">Oct 27</div>
+                                        <div class="stat-label">Completion Date</div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <div class="stat-value">$54.20</div>
+                                        <div class="stat-label">Final Share Price</div>
+                                    </div>
+                                    <div class="stat-box">
+                                        <div class="stat-value">7,500</div>
+                                        <div class="stat-label">Employees</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-card">
+                                <h3>First Tweet as Owner</h3>
+                                <div class="quote-tweet">
+                                    "the bird is freed"
+                                    <br>
+                                    <span style="color: #1da1f2">@elonmusk</span>
+                                </div>
+                            </div>
+
+                            <div class="modal-card tall">
+                                <h3>Initial Changes</h3>
+                                <ul class="changes-list">
+                                    <li>Board members removed</li>
+                                    <li>Top executives departed</li>
+                                    <li>New content policies announced</li>
+                                    <li>Verification system revamp planned</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-card medium">
+                                <h3>Stock Performance</h3>
+                                <div class="chart-container">
+                                    <canvas id="stockChart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     `
                 },
                 3: {
@@ -267,31 +396,156 @@
             const modalTitle = document.getElementById('modalTitle');
             const modalContent = document.getElementById('modalContent');
 
+            // 打开模态框的函数
+            function openModal(id) {
+                // 清除旧图表
+                if (window._modalChart) {
+                    window._modalChart.destroy();
+                    window._modalChart = null;
+                }
+                modalTitle.textContent = modalData[id].title;
+                modalContent.innerHTML = modalData[id].content;
+                modalOverlay.classList.add('active');
+                
+                // Don't disable body scrolling completely, just make modal scrollable
+                // document.body.style.overflow = 'hidden';
+
+                // 图表初始化
+                setTimeout(() => {
+                    // Support chart initialization
+                    const supportChartCanvas = document.getElementById('supportChart');
+                    if (supportChartCanvas) {
+                        const chartInstance = new Chart(supportChartCanvas.getContext('2d'), {
+                            type: 'pie',
+                            data: {
+                                labels: ['Support', 'Oppose', 'Neutral'],
+                                datasets: [{
+                                    data: [45, 30, 25],
+                                    backgroundColor: ['#1da1f2', '#e0245e', '#aab8c2'],
+                                    borderWidth: 0
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        position: 'bottom',
+                                        labels: {
+                                            color: '#fff'
+                                        }
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Public Response to Twitter Acquisition',
+                                        color: '#fff'
+                                    }
+                                }
+                            }
+                        });
+                        // Store chart instance for cleanup
+                        window._modalChart = chartInstance;
+                    }
+                    
+                    // Stock chart initialization
+                    const stockChartCanvas = document.getElementById('stockChart');
+                    if (stockChartCanvas) {
+                        const stockChartInstance = new Chart(stockChartCanvas.getContext('2d'), {
+                            type: 'line',
+                            data: {
+                                labels: ['Apr 13', 'Apr 14', 'Apr 15', 'Apr 18', 'Apr 19'],
+                                datasets: [{
+                                    label: 'Twitter Stock Price ($)',
+                                    data: [45.85, 45.08, 48.93, 47.08, 48.45],
+                                    borderColor: '#1DA1F2',
+                                    backgroundColor: 'rgba(29, 161, 242, 0.1)',
+                                    fill: true,
+                                    tension: 0.4
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: { 
+                                    legend: { 
+                                        display: false 
+                                    }
+                                },
+                                scales: {
+                                    y: { 
+                                        grid: { 
+                                            color: 'rgba(255, 255, 255, 0.1)' 
+                                        },
+                                        ticks: { 
+                                            color: '#fff' 
+                                        }
+                                    },
+                                    x: { 
+                                        grid: { 
+                                            color: 'rgba(255, 255, 255, 0.1)' 
+                                        },
+                                        ticks: { 
+                                            color: '#fff' 
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                        if (!window._modalChart) window._modalChart = stockChartInstance;
+                    }
+                    
+                    // Initialize embedded tweets
+                    if (window.twttr && window.twttr.widgets) {
+                        const tweetElements = document.querySelectorAll('.tweet-embed');
+                        tweetElements.forEach(element => {
+                            element.innerHTML = '';
+                            const tweetId = element.getAttribute('data-tweet-id');
+                            if (tweetId) {
+                                twttr.widgets.createTweet(
+                                    tweetId,
+                                    element,
+                                    {
+                                        theme: 'dark',
+                                        align: 'center'
+                                    }
+                                );
+                            }
+                        });
+                    }
+                }, 100);
+            }
+
+            // 关闭模态框的函数
+            function closeModal() {
+                modalOverlay.classList.remove('active');
+                // document.body.style.overflow = '';
+                
+                // Clean up chart instances
+                if (window._modalChart) {
+                    window._modalChart.destroy();
+                    window._modalChart = null;
+                }
+            }
+
+            // 为每个"阅读更多"按钮添加点击事件
             readMoreButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const id = button.getAttribute('data-id');
-                    if (modalData[id]) {
-                        modalTitle.textContent = modalData[id].title;
-                        modalContent.innerHTML = modalData[id].content;
-                        modalOverlay.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                    }
+                    openModal(id);
                 });
             });
 
-            function closeModal() {
-                modalOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-
+            // 关闭按钮事件
             closeModalBtn.addEventListener('click', closeModal);
             
+            // 点击背景关闭
             modalOverlay.addEventListener('click', (e) => {
                 if (e.target === modalOverlay) {
                     closeModal();
                 }
             });
 
+            // ESC键关闭
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
                     closeModal();
@@ -309,5 +563,6 @@
             });
         });
     </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
